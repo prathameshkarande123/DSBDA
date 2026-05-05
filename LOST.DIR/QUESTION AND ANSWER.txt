@@ -1,0 +1,237 @@
+3rd:-
+
+“I performed statistical analysis on the Iris dataset using Pandas.”
+
+First, I imported libraries like Pandas, NumPy, and sklearn. Then I loaded the Iris dataset from sklearn and converted it into a Pandas DataFrame. After that, I added the target column to represent species and renamed all columns for better understanding. Finally, I performed data analysis using functions like describe(), mean(), median(), mode(), groupby(), and standard deviation to understand the dataset
+
+
+
+
+4th:-
+This program uses the Boston Housing dataset to predict house prices using Linear Regression. First, we import libraries like pandas and numpy, then load the dataset from an online source. We explore the data by checking its shape and verifying if there are any missing values.
+Next, we separate the dataset into input features (X) and target variable (y), where the target is the house price. Then we split the data into training and testing sets using train_test_split.
+After that, we create a pipeline using StandardScaler and Linear Regression to normalize the data and train the model. Finally, we evaluate the model using the R² score to check how well it predicts house prices.”
+
+
+
+5th:-
+
+“This program analyzes a Social Network Ads dataset to predict whether a user will purchase a product or not using Logistic Regression. First, we import required libraries like pandas, numpy, matplotlib, and seaborn. Then we load the dataset and perform basic data exploration such as checking shape, data types, missing values, and summary statistics. We remove the ‘User ID’ column because it is not useful for prediction.
+Next, we visualize the data using bar plots and heatmaps to understand relationships between variables like gender and purchase behavior. After that, we separate the dataset into input features (Age and Estimated Salary) and target variable (Purchased). We split the data into training and testing sets.
+Then we apply Logistic Regression to train the model and predict results. We also use MinMaxScaler to normalize the data and improve performance. Finally, we evaluate the model using accuracy, confusion matrix, precision, recall, and classification report to measure how well the model performs.”
+
+
+6th:-
+
+This program performs classification on the Iris dataset using the Gaussian Naive Bayes algorithm.
+First, we import required libraries like pandas and matplotlib. Then we load the Iris dataset and explore it using functions like head(), shape(), and describe().
+Next, we separate the dataset into input features (X) and target variable (y), where X contains flower measurements and y contains the class labels.
+After that, we split the data into training and testing sets using train_test_split.
+Then we apply the Gaussian Naive Bayes model, train it using the training data, and make predictions on the test data.
+Finally, we evaluate the model using accuracy score and confusion matrix, and also calculate performance metrics like precision and recall.
+
+
+7th
+
+This program performs basic Natural Language Processing using the NLTK library. First, it downloads required datasets and takes a sample text as input. Then it performs sentence and word tokenization to split the text. After that, it applies stemming and lemmatization to convert words into their root forms. It also performs POS tagging to identify parts of speech and removes stopwords to clean the text. Finally, it prints the processed output.
+
+
+9th
+
+“This program performs Exploratory Data Analysis on the Titanic dataset. First, we import required libraries like pandas, numpy, seaborn, and matplotlib. Then we load the dataset using read_csv().
+We use functions like head(), describe(), and info() to understand the data. After that, we check for missing values using isnull().sum().
+The missing values in ‘Age’ are replaced using mean, and ‘Cabin’ and ‘Embarked’ are filled using mode.
+Finally, we create a boxplot using seaborn to visualize the distribution of age with respect to gender and survival. This helps us analyze how age and gender affected survival.”
+
+
+10th
+ This code performs Exploratory Data Analysis (EDA) on the Iris dataset.”
+First, we import libraries like NumPy, Pandas, Matplotlib, and Seaborn for data handling and visualization.
+Then, we load the dataset using read_csv() and display basic information using:
+head() to view first rows
+describe() for statistical summary
+isnull().sum() to check missing values
+After that, we check the data types of all features.
+Next, we use histograms with KDE to understand the distribution of numerical features like sepal and petal measurements.
+Finally, we use boxplots:
+To detect outliers
+To compare features across different species
+
+
+questions
+
+
+[10:11 am, 05/05/2026] Prathamesh Karande: 10th
+[10:11 am, 05/05/2026] Prathamesh Karande: What is Naive Bayes?
+Why is it called “naive”?
+What is Gaussian Naive Bayes?
+👉 Answer:
+It is a probabilistic classifier based on Bayes Theorem
+“Naive” because it assumes features are independent
+Gaussian NB assumes data follows normal distribution
+
+
+🌸 1. What is the Iris Dataset?
+The Iris dataset is a popular dataset used in machine learning for classification tasks.
+It contains 150 samples of iris flowers
+Each sample has 4 features:
+Sepal length
+Sepal width
+Petal length
+Petal width
+It has 3 classes (types of flowers):
+Iris-setosa
+Iris-versicolor
+Iris-virginica
+
+🎯 3. What is Classification?
+Classification is a type of supervised learning task where the output is a category or class label.
+
+What is NLP?
+NLP is a field of AI that deals with processing and understanding human language.
+What is tokenization?
+Splitting text into sentences or words.
+Difference between word_tokenize and sent_tokenize?
+word_tokenize → splits into words
+sent_tokenize → splits into sentences
+What is stemming?
+Reducing words to root form (may not be meaningful)
+What is lemmatization?
+Converting words to meaningful base form
+Difference between stemming and lemmatization? 👉 Very important question!
+Stemming gives root form but may not be meaningful, while lemmatization gives proper dictionary words.
+What are stopwords?
+Common words like “is”, “the”, “and” which are removed
+What is POS tagging?
+Identifying grammatical role (noun, verb, etc.)
+
+What is this dataset?
+This is the Boston Housing dataset, used to predict house prices based on features like crime rate, number of rooms, etc.
+2. What is the goal of this program?
+To build a Linear Regression model that predicts house prices (y) using input features (X).
+3. What is Linear Regression?
+It is a supervised machine learning algorithm that finds a relationship between input variables and output using a straight line:
+4. Why do we split data into training and testing?
+Training data → to train the model
+Testing data → to evaluate performance
+5. What is train_test_split?
+It divides the dataset into training and testing sets.
+6. What is StandardScaler?
+It standardizes data (mean = 0, variance = 1) so that all features are on the same scale.
+7. What is a pipeline?
+A pipeline combines multiple steps (scaling + model) into one workflow.
+8. What does model.fit() do?
+It trains the model using training data.
+9. What does model.score() return?
+It returns R² score (coefficient of determination):
+1 → perfect prediction
+0 → poor model
+10. What is random_state=42?
+It ensures same output every time (reproducibility).
+
+
+What is the aim of this practical?
+To analyze user data and build a Logistic Regression model to predict whether a user will purchase a product.
+2. What type of problem is this?
+👉 Classification problem (output is 0 or 1 → Purchased or Not Purchased)
+3. What is Logistic Regression?
+A supervised learning algorithm used for classification that predicts probability:
+4. Difference between Linear & Logistic Regression?
+Linear Regression
+Logistic Regression
+Predicts continuous values
+Predicts categories
+Output: any number
+Output: 0 or 1
+5. Why do we remove User ID?
+Because it has no impact on prediction (just an identifier).
+6. What is value_counts()?
+Counts frequency of values in a column.
+7. What is a heatmap?
+A visual representation of correlation between variables.
+8. What is confusion matrix?
+It shows:
+True Positive
+True Negative
+False Positive
+False Negative
+9. What is accuracy?
+10. What is precision and recall?
+Precision → correct positive predictions
+Recall → how many actual positives detected
+
+🔹 Dataset Questions
+What dataset are you using? 👉 Titanic dataset (passenger survival data)
+What is target variable? 👉 Survived
+🔹 Missing Values
+How did you handle missing values? 👉 Mean for Age, Mode for Cabin & Embarked
+Why mean and not median? 👉 Mean is simple, but median is better for skewed data (you can say this for extra marks)
+🔹 Visualization Questions
+What is countplot used for? 👉 Frequency of categorical variables
+What is boxplot? 👉 Used to detect outliers
+What is pairplot? 👉 Shows relationships between multiple variables
+What is heatmap? 👉 Shows correlation matrix
+🔹 Conceptual Questions
+What is EDA? 👉 Exploratory Data Analysis → understanding data using stats & visualization
+What is correlation? 👉 Relationship between variables
+What is outlier? 👉 Data point far from others
+🔹 Advanced Questions (High chance)
+Why use Seaborn instead of Matplotlib? 👉 Better visualization + less code
+What is hue in seaborn? 👉 Adds grouping (color separation)
+What is skewness? 👉 Distribution asymmetry
+
+
+Basic Questions
+What is this dataset? 👉 It is the Iris dataset, used for classification of flowers into species.
+What are the features in the dataset? 👉 Sepal length, sepal width, petal length, petal width, species.
+What is the target variable? 👉 Species
+🔹 About Libraries
+Why do we use NumPy? 👉 For numerical operations.
+Why do we use Pandas? 👉 For handling datasets (DataFrames).
+Why do we use Matplotlib? 👉 For basic plotting.
+Why do we use Seaborn? 👉 For advanced and attractive statistical visualization.
+🔹 About Data Analysis
+What does data.head() do? 👉 Shows first 5 rows.
+What does data.describe() do? 👉 Gives statistical summary (mean, std, min, max).
+What is include='object'? 👉 Used to describe categorical data (like species).
+What does isnull().sum() do? 👉 Checks missing values.
+🔹 About Visualization
+What is a histogram? 👉 Shows distribution of data.
+What is KDE? 👉 Smooth curve showing distribution.
+What is a boxplot? 👉 Shows median, quartiles, and outliers.
+Why use boxplot with species? 👉 To compare features across different species.
+🔹 Conceptual Questions
+What is EDA? 👉 Exploratory Data Analysis — understanding data before modeling.
+What are outliers? 👉 Extreme values different from normal data.
+Why is visualization important? 👉 Helps understand patterns and relationships.
+
+
+
+
+
+This DSBDAL Assignment 1 demonstrates data wrangling on "imports-85.csv" (auto dataset) using pandas, NumPy, Matplotlib: load data, preprocess (handle NaNs with means), format types, normalize/scale features, bin numerics (e.g., horsepower into Low/Medium/High), and one-hot encode categoricals like 'aspiration'.[1][2]
+
+## Core Techniques
+- Inspect: `head()`, `describe()`, `isnull().sum()`.[1][2]
+- Clean: Fill NaNs (e.g., `horsepower.replace(np.nan, mean)`), convert MPG to L/100km (`235/mpg`).[1]
+- Binning: `pd.cut()` for histograms/bars on horsepower, RPM, wheel-base.[1]
+- Normalize: Divide by max (length/width/height); dummy vars via `get_dummies()`.[1][2]
+
+## Short Oral Questions
+- What is `df.describe()` for?[1][2]
+- How to impute NaNs in 'stroke'?[1]
+- Explain `pd.cut()` for binning.[1]
+- MPG to L/100km formula?[1]
+- Purpose of `get_dummies()`?[1][2]
+- Label encoding limitation?[2][3][4]
+
+
+This DSBDAL Assignment 1 covers data wrangling on auto dataset: load/preprocess (NaN handling), format, normalize, binning, dummy encoding.[1][2]
+
+## Short Q&A
+- *What is df.describe() for?* Basic stats (mean, std, quartiles) for exploration.[1][2]
+- *How to impute NaNs in 'stroke'?* Replace with mean: df['stroke'].replace(np.nan, avg_stroke).[1]
+- *Explain pd.cut() for binning.* Cuts numerics into categories (e.g., horsepower: Low/Medium/High bins).[1]
+- *MPG to L/100km formula?* 235 / df['city-mpg'] (standardization).[1]
+- *Purpose of get_dummies()?* Converts categoricals (e.g., aspiration) to binary 0/1 columns.[1][2]
+- *Label encoding limitation?* Implies ordinal priority (high number > low), unsuitable for non-ordered categories.[2]
